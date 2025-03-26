@@ -4,7 +4,7 @@ import NetworkExtension
 struct ContentView: View {
     @StateObject private var vpnManager = VPNManager()
     @State private var vpnStatus: NEVPNStatus = .invalid
-    @State private var socks5Proxy: String = "176.226.244.28:1080" // Новый SOCKS5-сервер
+    @State private var socks5Proxy: String = "176.226.244.28:1080" 
     @State private var tunAddr: String = "192.168.1.2"
     @State private var tunMask: String = "255.255.255.0"
     @State private var tunDns: String = "8.8.8.8"
