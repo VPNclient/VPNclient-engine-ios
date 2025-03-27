@@ -7,12 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A25C0BB2D958AC000955407 /* VPNclientEngineIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A25C0B32D958AC000955407 /* VPNclientEngineIOS.framework */; };
+		3A25C0BC2D958AC000955407 /* VPNclientEngineIOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3A25C0B32D958AC000955407 /* VPNclientEngineIOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D8020B9C2D838FAA008F36CF /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8020B702D838F20008F36CF /* NetworkExtension.framework */; };
 		D8020BA42D838FAA008F36CF /* PackageTunnelProvider.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D8020B9B2D838FAA008F36CF /* PackageTunnelProvider.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D8020BCB2D839405008F36CF /* HevSocks5Tunnel.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8020BCA2D839405008F36CF /* HevSocks5Tunnel.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3A25C0B92D958AC000955407 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8020B4E2D838DF0008F36CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A25C0B22D958AC000955407;
+			remoteInfo = VPNclientEngineIOS;
+		};
 		D8020BA22D838FAA008F36CF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D8020B4E2D838DF0008F36CF /* Project object */;
@@ -23,6 +32,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		3A25C0BD2D958AC000955407 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3A25C0BC2D958AC000955407 /* VPNclientEngineIOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D8020B7E2D838F20008F36CF /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -37,6 +57,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3A25C0B32D958AC000955407 /* VPNclientEngineIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VPNclientEngineIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8020B562D838DF0008F36CF /* cntrlr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cntrlr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8020B702D838F20008F36CF /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
 		D8020B9B2D838FAA008F36CF /* PackageTunnelProvider.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PackageTunnelProvider.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +65,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		3A25C0C02D958AC000955407 /* Exceptions for "VPNclientEngineIOS" folder in "VPNclientEngineIOS" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			publicHeaders = (
+				VPNclientEngineIOS.h,
+			);
+			target = 3A25C0B22D958AC000955407 /* VPNclientEngineIOS */;
+		};
 		D8020BA52D838FAA008F36CF /* Exceptions for "PackageTunnelProvider" folder in "PackageTunnelProvider" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -54,6 +82,14 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		3A25C0B42D958AC000955407 /* VPNclientEngineIOS */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				3A25C0C02D958AC000955407 /* Exceptions for "VPNclientEngineIOS" folder in "VPNclientEngineIOS" target */,
+			);
+			path = VPNclientEngineIOS;
+			sourceTree = "<group>";
+		};
 		D8020B582D838DF0008F36CF /* cntrlr */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = cntrlr;
@@ -70,10 +106,18 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3A25C0B02D958AC000955407 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D8020B532D838DF0008F36CF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A25C0BB2D958AC000955407 /* VPNclientEngineIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +138,7 @@
 			children = (
 				D8020B582D838DF0008F36CF /* cntrlr */,
 				D8020B9D2D838FAA008F36CF /* PackageTunnelProvider */,
+				3A25C0B42D958AC000955407 /* VPNclientEngineIOS */,
 				D8020B6F2D838F20008F36CF /* Frameworks */,
 				D8020B572D838DF0008F36CF /* Products */,
 			);
@@ -104,6 +149,7 @@
 			children = (
 				D8020B562D838DF0008F36CF /* cntrlr.app */,
 				D8020B9B2D838FAA008F36CF /* PackageTunnelProvider.appex */,
+				3A25C0B32D958AC000955407 /* VPNclientEngineIOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,7 +165,40 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		3A25C0AE2D958AC000955407 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		3A25C0B22D958AC000955407 /* VPNclientEngineIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A25C0C12D958AC000955407 /* Build configuration list for PBXNativeTarget "VPNclientEngineIOS" */;
+			buildPhases = (
+				3A25C0AE2D958AC000955407 /* Headers */,
+				3A25C0AF2D958AC000955407 /* Sources */,
+				3A25C0B02D958AC000955407 /* Frameworks */,
+				3A25C0B12D958AC000955407 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				3A25C0B42D958AC000955407 /* VPNclientEngineIOS */,
+			);
+			name = VPNclientEngineIOS;
+			packageProductDependencies = (
+			);
+			productName = VPNclientEngineIOS;
+			productReference = 3A25C0B32D958AC000955407 /* VPNclientEngineIOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		D8020B552D838DF0008F36CF /* cntrlr */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D8020B662D838DF1008F36CF /* Build configuration list for PBXNativeTarget "cntrlr" */;
@@ -128,11 +207,13 @@
 				D8020B532D838DF0008F36CF /* Frameworks */,
 				D8020B542D838DF0008F36CF /* Resources */,
 				D8020B7E2D838F20008F36CF /* Embed Foundation Extensions */,
+				3A25C0BD2D958AC000955407 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				D8020BA32D838FAA008F36CF /* PBXTargetDependency */,
+				3A25C0BA2D958AC000955407 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				D8020B582D838DF0008F36CF /* cntrlr */,
@@ -176,6 +257,9 @@
 				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
+					3A25C0B22D958AC000955407 = {
+						CreatedOnToolsVersion = 16.2;
+					};
 					D8020B552D838DF0008F36CF = {
 						CreatedOnToolsVersion = 16.2;
 					};
@@ -200,11 +284,19 @@
 			targets = (
 				D8020B552D838DF0008F36CF /* cntrlr */,
 				D8020B9A2D838FAA008F36CF /* PackageTunnelProvider */,
+				3A25C0B22D958AC000955407 /* VPNclientEngineIOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3A25C0B12D958AC000955407 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D8020B542D838DF0008F36CF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -222,6 +314,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3A25C0AF2D958AC000955407 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D8020B522D838DF0008F36CF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -239,6 +338,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		3A25C0BA2D958AC000955407 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A25C0B22D958AC000955407 /* VPNclientEngineIOS */;
+			targetProxy = 3A25C0B92D958AC000955407 /* PBXContainerItemProxy */;
+		};
 		D8020BA32D838FAA008F36CF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D8020B9A2D838FAA008F36CF /* PackageTunnelProvider */;
@@ -247,6 +351,94 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		3A25C0BE2D958AC000955407 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6XT4R7V83F;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = click.vpnclient.engine.ios;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				XROS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		3A25C0BF2D958AC000955407 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6XT4R7V83F;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = click.vpnclient.engine.ios;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				XROS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
 		D8020B642D838DF1008F36CF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -485,6 +677,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3A25C0C12D958AC000955407 /* Build configuration list for PBXNativeTarget "VPNclientEngineIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A25C0BE2D958AC000955407 /* Debug */,
+				3A25C0BF2D958AC000955407 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D8020B512D838DF0008F36CF /* Build configuration list for PBXProject "cntrlr" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
