@@ -80,13 +80,13 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
         }
         let configLen = UInt32(configData.count)
 
-        // Поскольку мы не можем получить tun_fd, нужно переработать логику
+        
         os_log(.debug, "PacketTunnelProvider: Using packetFlow instead of tun_fd")
 
-        // Запускаем hev-socks5-tunnel в режиме, где мы сами обрабатываем пакеты
+        
         tunnelRunning = true
         DispatchQueue.global().async {
-            // Читаем пакеты из packetFlow и передаём их в SOCKS5
+            
             self.handlePackets()
         }
     }
@@ -106,11 +106,11 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
 
             for (packet, proto) in zip(packets, protocols) {
                 os_log(.debug, "PacketTunnelProvider: Received packet of size %d, protocol: %@", packet.count, proto.description)
-                // Здесь нужно передать пакет в hev-socks5-tunnel
-                // Например, через кастомный интерфейс или сокет
+                
+                
             }
 
-            // Продолжаем читать пакеты
+            
             self.handlePackets()
         }
     }
@@ -118,7 +118,7 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
     func monitorTunnelActivity() {
         DispatchQueue.global().async {
             while self.tunnelRunning {
-                usleep(1000000) // Проверка каждую секунду
+                usleep(1000000) 
                 os_log(.debug, "PacketTunnelProvider: Tunnel still active, checking packets...")
             }
         }
