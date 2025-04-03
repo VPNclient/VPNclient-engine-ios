@@ -13,7 +13,7 @@
 	</array>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.nativemind.cntrlr</string>
+		<string>group.click.vpnclient</string>
 	</array>
 </dict>
 </plist>

@@ -16,8 +16,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D8020B552D838DF0008F36CF"
-               BuildableName = "cntrlr.app"
-               BlueprintName = "cntrlr"
+               BuildableName = "VPNclientEngine.app"
+               BlueprintName = "VPNclientEngine"
                ReferencedContainer = "container:cntrlr.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,8 +45,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D8020B552D838DF0008F36CF"
-            BuildableName = "cntrlr.app"
-            BlueprintName = "cntrlr"
+            BuildableName = "VPNclientEngine.app"
+            BlueprintName = "VPNclientEngine"
             ReferencedContainer = "container:cntrlr.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -62,8 +62,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D8020B552D838DF0008F36CF"
-            BuildableName = "cntrlr.app"
-            BlueprintName = "cntrlr"
+            BuildableName = "VPNclientEngine.app"
+            BlueprintName = "VPNclientEngine"
             ReferencedContainer = "container:cntrlr.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

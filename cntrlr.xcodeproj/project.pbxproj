@@ -10,7 +10,7 @@
 		3A25C0BB2D958AC000955407 /* VPNclientEngineIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A25C0B32D958AC000955407 /* VPNclientEngineIOS.framework */; };
 		3A25C0BC2D958AC000955407 /* VPNclientEngineIOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3A25C0B32D958AC000955407 /* VPNclientEngineIOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D8020B9C2D838FAA008F36CF /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8020B702D838F20008F36CF /* NetworkExtension.framework */; };
-		D8020BA42D838FAA008F36CF /* PackageTunnelProvider.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D8020B9B2D838FAA008F36CF /* PackageTunnelProvider.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D8020BA42D838FAA008F36CF /* PacketTunnelProvider.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D8020B9B2D838FAA008F36CF /* PacketTunnelProvider.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D8020BCB2D839405008F36CF /* HevSocks5Tunnel.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8020BCA2D839405008F36CF /* HevSocks5Tunnel.xcframework */; };
 /* End PBXBuildFile section */
 
@@ -27,7 +27,7 @@
 			containerPortal = D8020B4E2D838DF0008F36CF /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D8020B9A2D838FAA008F36CF;
-			remoteInfo = PackageTunnelProvider;
+			remoteInfo = PacketTunnelProvider;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -49,7 +49,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				D8020BA42D838FAA008F36CF /* PackageTunnelProvider.appex in Embed Foundation Extensions */,
+				D8020BA42D838FAA008F36CF /* PacketTunnelProvider.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -57,10 +57,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3A1EF5DE2D9E7AD4000C3C51 /* PacketTunnelProvider copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "PacketTunnelProvider copy-Info.plist"; path = "/Users/anton/proj/VPNclient/VPNclient-engine-ios/PacketTunnelProvider copy-Info.plist"; sourceTree = "<absolute>"; };
 		3A25C0B32D958AC000955407 /* VPNclientEngineIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VPNclientEngineIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D8020B562D838DF0008F36CF /* cntrlr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cntrlr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8020B562D838DF0008F36CF /* VPNclientEngine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VPNclientEngine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8020B702D838F20008F36CF /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
-		D8020B9B2D838FAA008F36CF /* PackageTunnelProvider.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PackageTunnelProvider.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8020B9B2D838FAA008F36CF /* PacketTunnelProvider.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PacketTunnelProvider.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8020BCA2D839405008F36CF /* HevSocks5Tunnel.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = HevSocks5Tunnel.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,12 +73,12 @@
 			);
 			target = 3A25C0B22D958AC000955407 /* VPNclientEngineIOS */;
 		};
-		D8020BA52D838FAA008F36CF /* Exceptions for "PackageTunnelProvider" folder in "PackageTunnelProvider" target */ = {
+		D8020BA52D838FAA008F36CF /* Exceptions for "PacketTunnelProvider" folder in "PacketTunnelProvider" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = D8020B9A2D838FAA008F36CF /* PackageTunnelProvider */;
+			target = D8020B9A2D838FAA008F36CF /* PacketTunnelProvider */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
@@ -95,12 +96,12 @@
 			path = cntrlr;
 			sourceTree = "<group>";
 		};
-		D8020B9D2D838FAA008F36CF /* PackageTunnelProvider */ = {
+		D8020B9D2D838FAA008F36CF /* PacketTunnelProvider */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				D8020BA52D838FAA008F36CF /* Exceptions for "PackageTunnelProvider" folder in "PackageTunnelProvider" target */,
+				D8020BA52D838FAA008F36CF /* Exceptions for "PacketTunnelProvider" folder in "PacketTunnelProvider" target */,
 			);
-			path = PackageTunnelProvider;
+			path = PacketTunnelProvider;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -137,9 +138,10 @@
 			isa = PBXGroup;
 			children = (
 				D8020B582D838DF0008F36CF /* cntrlr */,
-				D8020B9D2D838FAA008F36CF /* PackageTunnelProvider */,
+				D8020B9D2D838FAA008F36CF /* PacketTunnelProvider */,
 				3A25C0B42D958AC000955407 /* VPNclientEngineIOS */,
 				D8020B6F2D838F20008F36CF /* Frameworks */,
+				3A1EF5DE2D9E7AD4000C3C51 /* PacketTunnelProvider copy-Info.plist */,
 				D8020B572D838DF0008F36CF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -147,8 +149,8 @@
 		D8020B572D838DF0008F36CF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D8020B562D838DF0008F36CF /* cntrlr.app */,
-				D8020B9B2D838FAA008F36CF /* PackageTunnelProvider.appex */,
+				D8020B562D838DF0008F36CF /* VPNclientEngine.app */,
+				D8020B9B2D838FAA008F36CF /* PacketTunnelProvider.appex */,
 				3A25C0B32D958AC000955407 /* VPNclientEngineIOS.framework */,
 			);
 			name = Products;
@@ -199,9 +201,9 @@
 			productReference = 3A25C0B32D958AC000955407 /* VPNclientEngineIOS.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D8020B552D838DF0008F36CF /* cntrlr */ = {
+		D8020B552D838DF0008F36CF /* VPNclientEngine */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D8020B662D838DF1008F36CF /* Build configuration list for PBXNativeTarget "cntrlr" */;
+			buildConfigurationList = D8020B662D838DF1008F36CF /* Build configuration list for PBXNativeTarget "VPNclientEngine" */;
 			buildPhases = (
 				D8020B522D838DF0008F36CF /* Sources */,
 				D8020B532D838DF0008F36CF /* Frameworks */,
@@ -218,16 +220,16 @@
 			fileSystemSynchronizedGroups = (
 				D8020B582D838DF0008F36CF /* cntrlr */,
 			);
-			name = cntrlr;
+			name = VPNclientEngine;
 			packageProductDependencies = (
 			);
 			productName = cntrlr;
-			productReference = D8020B562D838DF0008F36CF /* cntrlr.app */;
+			productReference = D8020B562D838DF0008F36CF /* VPNclientEngine.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D8020B9A2D838FAA008F36CF /* PackageTunnelProvider */ = {
+		D8020B9A2D838FAA008F36CF /* PacketTunnelProvider */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D8020BA62D838FAA008F36CF /* Build configuration list for PBXNativeTarget "PackageTunnelProvider" */;
+			buildConfigurationList = D8020BA62D838FAA008F36CF /* Build configuration list for PBXNativeTarget "PacketTunnelProvider" */;
 			buildPhases = (
 				D8020B972D838FAA008F36CF /* Sources */,
 				D8020B982D838FAA008F36CF /* Frameworks */,
@@ -238,13 +240,13 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				D8020B9D2D838FAA008F36CF /* PackageTunnelProvider */,
+				D8020B9D2D838FAA008F36CF /* PacketTunnelProvider */,
 			);
-			name = PackageTunnelProvider;
+			name = PacketTunnelProvider;
 			packageProductDependencies = (
 			);
-			productName = PackageTunnelProvider;
-			productReference = D8020B9B2D838FAA008F36CF /* PackageTunnelProvider.appex */;
+			productName = PacketTunnelProvider;
+			productReference = D8020B9B2D838FAA008F36CF /* PacketTunnelProvider.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -282,8 +284,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D8020B552D838DF0008F36CF /* cntrlr */,
-				D8020B9A2D838FAA008F36CF /* PackageTunnelProvider */,
+				D8020B552D838DF0008F36CF /* VPNclientEngine */,
+				D8020B9A2D838FAA008F36CF /* PacketTunnelProvider */,
 				3A25C0B22D958AC000955407 /* VPNclientEngineIOS */,
 			);
 		};
@@ -345,7 +347,7 @@
 		};
 		D8020BA32D838FAA008F36CF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D8020B9A2D838FAA008F36CF /* PackageTunnelProvider */;
+			target = D8020B9A2D838FAA008F36CF /* PacketTunnelProvider */;
 			targetProxy = D8020BA22D838FAA008F36CF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -384,7 +386,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = auto;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "xrsimulator xros watchsimulator watchos macosx iphonesimulator iphoneos driverkit appletvsimulator appletvos";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_VERSION = 5.0;
@@ -428,7 +431,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = auto;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "xrsimulator xros watchsimulator watchos macosx iphonesimulator iphoneos driverkit appletvsimulator appletvos";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_VERSION = 5.0;
@@ -581,7 +585,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = nativemind.cntrlr;
+				PRODUCT_BUNDLE_IDENTIFIER = click.vpnclient.engine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -612,7 +616,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = nativemind.cntrlr;
+				PRODUCT_BUNDLE_IDENTIFIER = click.vpnclient.engine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -623,22 +627,22 @@
 		D8020BA72D838FAA008F36CF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = PackageTunnelProvider/PackageTunnelProvider.entitlements;
+				CODE_SIGN_ENTITLEMENTS = PacketTunnelProvider/PacketTunnelProvider.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6XT4R7V83F;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PackageTunnelProvider/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = PackageTunnelProvider;
+				INFOPLIST_FILE = PacketTunnelProvider/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PacketTunnelProvider;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = nativemind.cntrlr.PackageTunnelProvider;
+				PRODUCT_BUNDLE_IDENTIFIER = click.vpnclient.engine.PacketTunnelProvider;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -650,22 +654,22 @@
 		D8020BA82D838FAA008F36CF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = PackageTunnelProvider/PackageTunnelProvider.entitlements;
+				CODE_SIGN_ENTITLEMENTS = PacketTunnelProvider/PacketTunnelProvider.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6XT4R7V83F;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PackageTunnelProvider/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = PackageTunnelProvider;
+				INFOPLIST_FILE = PacketTunnelProvider/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PacketTunnelProvider;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = nativemind.cntrlr.PackageTunnelProvider;
+				PRODUCT_BUNDLE_IDENTIFIER = click.vpnclient.engine.PacketTunnelProvider;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -695,7 +699,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D8020B662D838DF1008F36CF /* Build configuration list for PBXNativeTarget "cntrlr" */ = {
+		D8020B662D838DF1008F36CF /* Build configuration list for PBXNativeTarget "VPNclientEngine" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D8020B672D838DF1008F36CF /* Debug */,
@@ -704,7 +708,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D8020BA62D838FAA008F36CF /* Build configuration list for PBXNativeTarget "PackageTunnelProvider" */ = {
+		D8020BA62D838FAA008F36CF /* Build configuration list for PBXNativeTarget "PacketTunnelProvider" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D8020BA72D838FAA008F36CF /* Debug */,

@@ -71,7 +71,7 @@ class VPNManager: ObservableObject {
             }
 
             let tunnelProtocol = NETunnelProviderProtocol()
-            tunnelProtocol.providerBundleIdentifier = "nativemind.cntrlr.PackageTunnelProvider"
+            tunnelProtocol.providerBundleIdentifier = "click.vpnclient.engine.PacketTunnelProvider"
             tunnelProtocol.serverAddress = socks5Proxy.components(separatedBy: ":").first ?? "127.0.0.1"
             tunnelProtocol.providerConfiguration = [
                 "tunAddr": tunAddr,
